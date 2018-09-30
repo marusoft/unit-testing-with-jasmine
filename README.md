@@ -1,2 +1,2 @@
 # unit-testing-with-jasmine
-The use Jasmine --Behavior Driven Development to performed unit testing in JavaScript 
+The use of Jasmine `behavior-driven development framework` for testing JavaScript code.
