@@ -1,0 +1,96 @@
+<html>
+
+<head>
+    <link rel="shortcut icon" type="image/png" href="./jasmine/jasmine_favicon.png">
+    <link rel="stylesheet" type="text/css" href="./jasmine/jasmine.css">
+
+    <script type="text/javascript" src="./jasmine/jasmine.js"></script>
+    <script type="text/javascript" src="./jasmine/jasmine-html.js"></script>
+    <script type="text/javascript" src="./jasmine/boot.js"></script>
+
+    <script>
+        function getOpposite(bool) {
+            return !bool;
+        }
+
+        function sumOfTwoNumbers(x, y) {
+            return x + y;
+        }
+
+        function subtractionOfTwoNumbers(x, y) {
+            return x - y;
+        }
+
+        function productOfTwoNunbers(x, y) {
+            return x * y;
+        }
+
+        function divisionOfTwoNunbers(x, y) {
+            return x / y;
+        }
+        describe('Math Operation', () => {
+            let numOne;
+            let numTwo;
+            beforeEach(() => {
+                numOne = 6;
+                numTwo = 7;
+            })
+            it('add two numbers', () => {
+                // values to test
+                // const numOne = 6;
+                // const numTwo = 7;
+
+                // action
+                const output = sumOfTwoNumbers(numOne, numTwo);
+                //expectation
+                expect(output).not.toBe(14);
+            });
+            it('subtract two numbers', () => {
+                // values to test
+                // const numOne = 6;
+                // const numTwo = 7;
+
+                // action
+                const output = subtractionOfTwoNumbers(numOne, numTwo);
+                //expectation
+                expect(output).toBe(-1);
+            });
+            it('multiply two numbers', () => {
+                // values to test
+                // const numOne = 6;
+                // const numTwo = 7;
+
+                // action
+                const output = productOfTwoNunbers(numOne, numTwo);
+                //expectation
+                expect(output).toBe(42);
+            });
+            it('divide two numbers', () => {
+                // values to test
+                // const numOne = 6;
+                // const numTwo = 7;
+
+                // action
+                const output = divisionOfTwoNunbers(numOne, numTwo);
+                //expectation
+                expect(output).not.toBe(-1);
+            });
+        })
+
+        describe('Write Your Test Group Descriptions Here', () => {
+            it('Write Your Test Expectation Here', () => {
+                // arrange
+                let bool = false;
+
+                // act
+                const result = getOpposite(bool);
+
+                // assert
+                expect(result).toBe(true);
+            })
+        });
+
+    </script>
+</head>
+
+</html>
